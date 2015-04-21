@@ -1,6 +1,6 @@
 <objectAnimator
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:duration="500"
+    android:duration="@integer/play_btn_animation_length"
     android:propertyName="pathData"
     android:interpolator="@android:anim/accelerate_decelerate_interpolator"
     android:valueFrom="M0,0 L150,0 150,400 0,400 z

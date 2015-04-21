@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
         switchButton = (FrameLayout) findViewById(R.id.btn_switch);
         switchButtonIcon =  findViewById(R.id.tv_morph);
         isPause = false;
-
+        final int animationLength = getResources().getInteger(R.integer.play_btn_animation_length);
         switchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
                     ((Animatable) switchButtonIcon.getBackground()).start();
                     switchButton.setBackground(getResources().getDrawable(R.drawable.switch_btn_bg_pause_transition));
                     TransitionDrawable transition = (TransitionDrawable) switchButton.getBackground();
-                    transition.startTransition(500);
+                    transition.startTransition(animationLength);
                     isPause = false;
                 }
 
@@ -43,7 +43,7 @@ public class MainActivity extends Activity {
                     ((Animatable) switchButtonIcon.getBackground()).start();
                     switchButton.setBackground(getResources().getDrawable(R.drawable.switch_btn_bg_resume_transition));
                     TransitionDrawable transition = (TransitionDrawable) switchButton.getBackground();
-                    transition.startTransition(500);
+                    transition.startTransition(animationLength);
                     isPause = true;
                 }
             }

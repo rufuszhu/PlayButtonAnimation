@@ -14,8 +14,8 @@
 
         <View
             android:id="@+id/tv_morph"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
+            android:layout_width="@dimen/play_btn_icon_size"
+            android:layout_height="@dimen/play_btn_icon_size"
             android:layout_gravity="center"
             android:gravity="center"
             android:background="@drawable/switch_btn_start_vector"

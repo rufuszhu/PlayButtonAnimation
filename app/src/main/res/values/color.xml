@@ -3,6 +3,7 @@
     <color name="accent">#FF5252</color>
     <color name="white">#F5F5F5</color>
     <color name="orange">#FF8800</color>
+    <color name="orange_clicked">#f9b970</color>
     <color name="start_track">#74c5bb</color>
     <color name="start_track_clicked">#cef0ec</color>
     <color name="light_red">#FF4444</color>
